@@ -24,9 +24,18 @@
         <processorPath useClasspath="true" />
         <module name="MapReduceShowcase" />
       </profile>
+      <profile default="false" name="Annotation profile for HdfsShowCase" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="HdfsShowCase" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="HadoopMeta" target="1.6" />
       <module name="HadoopShowCase" target="1.6" />
+      <module name="HdfsShowCase" target="1.6" />
       <module name="MapReduceShowcase" target="1.6" />
     </bytecodeTargetLevel>
   </component>

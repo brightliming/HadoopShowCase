@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>MapReduceShowCase</module>
+        <module>HadoopMeta</module>
+        <module>HdfsShowCase</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -302,6 +304,16 @@
                 <plugin>
                     <artifactId>maven-assembly-plugin</artifactId>
                     <version>2.4</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                 <mainClass>com.ehl.mapreduce.MaxTemperature</mainClass>
+                            </manifest>
+                        </archive>
+                        <descriptorRefs>
+                            <descriptorRef>jar-with-dependencies</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>net.alchim31.maven</groupId>
